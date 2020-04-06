@@ -10,6 +10,9 @@ module.exports = class SingleSpaReactGenerator extends Generator {
     this.option("packageManager", {
       type: String
     })
+    this.option("typescript", {
+      type: Boolean
+    })
   }
   async createPackageJson() {
     this.packageManager = this.options.packageManager
